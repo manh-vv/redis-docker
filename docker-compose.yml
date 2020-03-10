@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  redis:
+    image: redis-docker
+    container_name: redis-docker
+    restart: always
+    ports:
+      - 6380:6379
+    volumes:
+      - ./config:/app/config
